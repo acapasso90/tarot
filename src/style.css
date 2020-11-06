@@ -1,0 +1,18 @@
+.card {min-width: 80px;
+    max-width: 120px;
+min-height: 178px;
+z-index: 0;
+background-color: blueviolet;}
+
+.col-lg {padding: 0;
+    max-width: 120px;}
+
+.cardFace {min-width: 120px;
+min-height: 170px;
+max-height: 180px;
+z-index: 4;
+padding-right: 200px;
+animation: slide 5s forwards cubic-bezier(0.29, 0.52, 0.56, 0.96);
+}
+
+@keyframes slide { from {margin-left: -20px;} to {margin-left: 150px;}}
