@@ -2,7 +2,12 @@ function displayTarot(response){
     let reading = response.data.cards[0].meaning_up;
     let cardName = response.data.cards[0].name;
     let cardFace = document.getElementById("cardFace");
+    let description = document.querySelector(".tarotDescription");
+    let cardNamed = document.querySelector(".cardTitle");
+    cardNamed.innerHTML = `${cardName}`;
+    description.innerHTML = `${reading};`
     cardFace.setAttribute("src", `media/${cardName}.jpg`);
+    cardFace.classList.add("cardFaceActive");
 }
 
 function showTarot(response){
