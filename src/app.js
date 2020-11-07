@@ -7,7 +7,11 @@ function displayTarot(response){
     cardNamed.innerHTML = `${cardName}`;
     description.innerHTML = `${reading};`
     cardFace.setAttribute("src", `media/${cardName}.jpg`);
+    cardFace.setAttribute("alt", `${cardName}`);
     cardFace.classList.add("cardFaceActive");
+    cardFace.style.animationPlayState="running";
+    description.style.animationPlayState="running";
+    cardNamed.style.animationPlayState="running";
 }
 
 function showTarot(response){

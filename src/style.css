@@ -1,17 +1,52 @@
-body {text-align: center;}
+body {text-align: center;
+    font-family: 'EB Garamond', serif;
+background-color: #1a1828;
+color: #f8d86e;}
 
+a, a:visited {color: #cf49f7;
+text-decoration: none;}
+
+a:hover {text-decoration: none;
+cursor: default;
+font-style: italic;}
+
+.instructions {color: #f4fad1;
+font-size: 24px;}
+
+.illustrated {color: #f4fad1;
+    font-size: 16px;
+}
 .tarotDescription {min-height: 60px;
-    text-align: left;}
+    text-align: left;
+    animation: appearDescription 5s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
+    animation-play-state: paused;
+color: #f4fad1;
+font-size: 20px;}
+
+.header h3 {font-family: 'Merienda', cursive;
+font-size: 55px;
+margin-top: 25px;}
 
 .cardTitle {
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    animation: appear 5s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
+    animation-play-state: paused;
 min-height: 24px;
-padding-bottom: 8px;}
+padding-bottom: 2px;
 
-.card {min-width: 80px;
+margin-bottom: 0;
+}
+
+.card {
+    min-width: 80px;
     max-width: 120px;
 min-height: 178px;
 z-index: 0;
 background-color: blueviolet;
+background-image:url('../media/jon-tyson-T8FhpQF_P38-unsplash.jpg');
+border: 3px solid #ffffff;
+background-size: cover;
 display: block;
 margin-left: auto;
 margin-right: auto;}
@@ -24,10 +59,12 @@ min-height: 170px;
 max-height: 180px;
 z-index: 4;
 animation: slide 5s forwards cubic-bezier(0.29, 0.52, 0.56, 0.96);
+animation-play-state: paused;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: none;
+margin-bottom: 0;
+border-radius: .25rem;
 }
 
 .cardFaceActive {min-width: 120px;
@@ -35,7 +72,11 @@ margin-bottom: none;
     max-height: 180px;
     margin-bottom: none;
     z-index: 4;
-    border: 2px solid purple;}
+    border: 3px solid #ffffff;
+    border-radius: .25rem;}
+
+@keyframes appear {from {color: #1a1828;} to {color: #f8d86e;}}
+@keyframes appearDescription {from {color: #1a1828;} to {color: #f4fad1;}}
 
     
-@keyframes slide { from {margin-top: -40px;} to {margin-top: 80px;}}
+@keyframes slide { from {margin-top: -40px;} to {margin-top: 60px;}}
