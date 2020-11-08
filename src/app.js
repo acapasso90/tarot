@@ -19,4 +19,4 @@ let apiURL ="https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=1";
 axios.get(apiURL).then(displayTarot);}
 
 let card = document.querySelector(".card");
-card.addEventListener("click", showTarot)
+card.addEventListener("click", showTarot, { once: true }) 

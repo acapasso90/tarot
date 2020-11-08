@@ -1,20 +1,23 @@
 body {text-align: center;
-    font-family: 'EB Garamond', serif;
-background-color: #1a1828;
+    font-family: 'Architects Daughter', cursive;;
+    background-color: #9e5d83;
+    background-image: url("../media/background.jpg");
+    background-blend-mode: darken;
 color: #f8d86e;}
 
-a, a:visited {color: #cf49f7;
+a, a:visited {color: #83e3f0;
 text-decoration: none;}
 
 a:hover {text-decoration: none;
 cursor: default;
 font-style: italic;}
 
-.instructions {color: #f4fad1;
+.instructions h5 {color: #f4fad1;
 font-size: 24px;}
 
 .illustrated {color: #f4fad1;
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 35px;
 }
 .tarotDescription {min-height: 60px;
     text-align: left;
@@ -25,7 +28,11 @@ font-size: 20px;}
 
 .header h3 {font-family: 'Merienda', cursive;
 font-size: 55px;
-margin-top: 25px;}
+margin-top: 25px;
+text-shadow: 1px 1px #352b0b,
+1px -1px #352b0b,
+-1px 1px #352b0b,
+-1px -1px #352b0b;}
 
 .cardTitle {
     font-size: 20px;
@@ -34,7 +41,6 @@ margin-top: 25px;}
     animation-play-state: paused;
 min-height: 24px;
 padding-bottom: 2px;
-
 margin-bottom: 0;
 }
 
@@ -49,7 +55,8 @@ border: 3px solid #ffffff;
 background-size: cover;
 display: block;
 margin-left: auto;
-margin-right: auto;}
+margin-right: auto;
+margin-top: 15px;}
 
 .col-lg {padding: 0;
     max-width: 120px;}
@@ -75,8 +82,8 @@ border-radius: .25rem;
     border: 3px solid #ffffff;
     border-radius: .25rem;}
 
-@keyframes appear {from {color: #1a1828;} to {color: #f8d86e;}}
-@keyframes appearDescription {from {color: #1a1828;} to {color: #f4fad1;}}
+@keyframes appear {from {color: #795D83;} to {color: #f8d86e;}}
+@keyframes appearDescription {from {color: #795D83;} to {color: #f4fad1;}}
 
     
-@keyframes slide { from {margin-top: -40px;} to {margin-top: 60px;}}
+@keyframes slide { from {margin-top: -40px;} to {margin-top: 50px;}}
