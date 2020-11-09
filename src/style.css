@@ -3,7 +3,12 @@ body {text-align: center;
     background-color: #9e5d83;
     background-image: url("../media/background.jpg");
     background-blend-mode: darken;
-color: #f8d86e;}
+color: #f8d86e;
+font-size: 18px;}
+
+img {min-width: 120px;
+    max-width: 120px;
+max-height: 180px}
 
 a, a:visited {color: #83e3f0;
 text-decoration: none;}
@@ -12,6 +17,7 @@ a:hover {text-decoration: none;
 cursor: default;
 font-style: italic;}
 
+
 .instructions h5 {color: #f4fad1;
 font-size: 24px;}
 
@@ -19,12 +25,18 @@ font-size: 24px;}
     font-size: 20px;
     margin-bottom: 35px;
 }
-.tarotDescription {min-height: 60px;
-    text-align: left;
-    animation: appearDescription 5s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
-    animation-play-state: paused;
+.tarotDescription
+ {min-height: 60px;
+text-align: left;
+animation: appearDescription 5s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
+animation-play-state: paused;
 color: #f4fad1;
 font-size: 20px;}
+
+
+.pastCardDescription, .presentCardDescription,
+.futureCardDescription {max-width: 300px;
+padding: 20px 0 0 30px;}
 
 .header h3 {font-family: 'Merienda', cursive;
 font-size: 55px;
@@ -44,7 +56,12 @@ padding-bottom: 2px;
 margin-bottom: 0;
 }
 
-.card {
+.presentCardName, .futureCardName, .pastCardName {font-size: 20px;
+    font-family: 'Merienda', cursive;
+    min-height: 24px;
+    padding-bottom: 2px;
+    margin-bottom: 0;}
+.card, .card3 {
     min-width: 80px;
     max-width: 120px;
 min-height: 178px;
@@ -57,9 +74,6 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 margin-top: 15px;}
-
-.col-lg {padding: 0;
-    max-width: 120px;}
 
 .cardFace {min-width: 120px;
 min-height: 170px;
