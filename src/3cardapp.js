@@ -8,10 +8,10 @@ function display3Tarot(response){
     pastCardDescription.innerHTML = `${pastReading}`;
     pastCardFace.setAttribute("src", `media/${pastCardName}.jpg`);
     pastCardFace.setAttribute("alt", `${pastCardName}`);
- // pastcardFace.classList.add("pastcardFaceActive");
-   // pastcardFace.style.animationPlayState="running";
-  //  pastCardDescription.style.animationPlayState="running";
-   // pastCardNamed.style.animationPlayState="running";
+    pastCardFace.classList.add("pastCardFaceActive");
+    pastCardFace.style.animationPlayState="running";
+    pastCardDescription.style.animationPlayState="running";
+    pastCardNamed.style.animationPlayState="running";
     let presentReading = response.data.cards[1].meaning_up;
     let presentCardName  = response.data.cards[1].name;
     let presentCardFace = document.getElementById("presentCardFace");
@@ -21,10 +21,10 @@ function display3Tarot(response){
     presentCardDescription.innerHTML = `${presentReading}`;
     presentCardFace.setAttribute("src", `media/${presentCardName}.jpg`);
     presentCardFace.setAttribute("alt", `${presentCardName}`);
-   // presentcardFace.classList.add("presentcardFaceActive");
-   // presentcardFace.style.animationPlayState="running";
-    //presentCardDescription.style.animationPlayState="running";
-   // presentCardNamed.style.animationPlayState="running";
+   presentCardFace.classList.add("presentCardFaceActive");
+  // presentCardFace.style.animationPlayState="running";
+    presentCardDescription.style.animationPlayState="running";
+    presentCardNamed.style.animationPlayState="running";
     let futureReading = response.data.cards[2].meaning_up;
     let futureCardName  = response.data.cards[2].name;
     let futureCardFace = document.getElementById("futureCardFace");
@@ -34,8 +34,8 @@ function display3Tarot(response){
     futureCardDescription.innerHTML = `${futureReading}`;
     futureCardFace.setAttribute("src", `media/${futureCardName}.jpg`);
     futureCardFace.setAttribute("alt", `${futureCardName}`);
-   // futurecardFace.classList.add("futurecardFaceActive");
-    //futurecardFace.style.animationPlayState="running";
+    futureCardFace.classList.add("futureCardFaceActive");
+   // futureCardFace.style.animationPlayState="running";
     //futureCardDescription.style.animationPlayState="running";
     //futureCardNamed.style.animationPlayState="running";
 
