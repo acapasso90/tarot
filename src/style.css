@@ -99,8 +99,10 @@ background-size: cover;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 15px;
-margin-bottom: 50px;}
+margin-top: 18px;
+margin-bottom: 40px;}
+
+.card3 {border-radius: .25rem;}
 
 .cardFace, .pastCardFace, 
 .presentCardFace, .futureCardFace  {min-width: 120px;
@@ -114,6 +116,7 @@ margin-bottom: none;
 padding-bottom: none;
 border-radius: .25rem;
 }
+
 .cardFace {animation: slide 5s forwards cubic-bezier(0.29, 0.52, 0.56, 0.96);
     animation-play-state: paused;}
 
