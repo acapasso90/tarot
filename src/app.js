@@ -12,6 +12,8 @@ function displayTarot(response){
     cardFace.style.animationPlayState="running";
     description.style.animationPlayState="running";
     cardNamed.style.animationPlayState="running";
+    let instructions = document.querySelector(".instructions");
+    instructions.innerHTML = "If no cards are dealt, refresh and try again.";
 }
 
 function showTarot(){

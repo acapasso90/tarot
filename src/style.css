@@ -4,7 +4,7 @@ body {text-align: center;
     background-image: url("../media/background.jpg");
     background-blend-mode: darken;
 color: #f8d86e;
-font-size: 18px;}
+font-size: 24px;}
 
 img {min-width: 120px;
     max-width: 120px;
@@ -19,8 +19,10 @@ font-style: italic;}
 
 .container {min-width: 1300px;}
 
+
 .instructions h5 {color: #f4fad1;
-font-size: 24px;}
+font-size: 24px;
+transition: 5ms all ease-in-out;}
 
 .illustrated {color: #f4fad1;
     font-size: 20px;
@@ -37,7 +39,8 @@ font-size: 20px;}
 
 .pastCardDescription, .presentCardDescription,
 .futureCardDescription {max-width: 300px;
-padding: 20px 0 0 30px;}
+padding: 20px 0 0 30px;
+font-size: 20px;}
 
 .pastCardDescription {animation: pastAppearDescription 10s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
     animation-play-state: paused;}
@@ -45,6 +48,8 @@ padding: 20px 0 0 30px;}
 .presentCardDescription {animation: presentAppearDescription 15s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
     animation-play-state: paused;}
 
+.futureCardDescription {animation: futureAppearDescription 15s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
+    animation-play-state: paused;}
 
 
 .header h3 {font-family: 'Merienda', cursive;
@@ -56,7 +61,7 @@ text-shadow: 1px 1px #352b0b,
 -1px -1px #352b0b;}
 
 .cardTitle {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Merienda', cursive;
     animation: appear 5s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
     animation-play-state: paused;
@@ -75,13 +80,18 @@ margin-bottom: 0;
     animation-play-state: paused;}
 
 .presentCardName {animation: presentAppear 15s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
-    animation-play-state: paused;}
+    animation-play-state: paused;
+   }
+
+.futureCardName  {animation: futureAppear 15s forwards cubic-bezier(0.1, 0.68, 0.09, 0.93);
+    animation-play-state: paused;
+ }
 
 .card, .card3 {
     min-width: 80px;
     max-width: 120px;
 min-height: 178px;
-z-index: 0;
+z-index: 2;
 background-color: blueviolet;
 background-image:url('../media/jon-tyson-T8FhpQF_P38-unsplash.jpg');
 border: 3px solid #ffffff;
@@ -89,9 +99,11 @@ background-size: cover;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 15px;}
+margin-top: 15px;
+margin-bottom: 50px;}
 
-.cardFace, .pastCardFace, .presentCardFace, .futureCardFace  {min-width: 120px;
+.cardFace, .pastCardFace, 
+.presentCardFace, .futureCardFace  {min-width: 120px;
 min-height: 170px;
 max-height: 180px;
 z-index: 4;
@@ -108,6 +120,13 @@ border-radius: .25rem;
 .pastCardFace {animation: leftSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
     animation-play-state: paused;}
 
+.presentCardFace {z-index: 0;
+    animation: downSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
+    animation-play-state: paused;}
+
+.futureCardFace {animation: rightSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
+    animation-play-state: paused;}
+
 .cardFaceActive, .pastCardFaceActive, .presentCardFaceActive,
 .futureCardFaceActive {min-width: 120px;
     min-height: 170px;
@@ -117,13 +136,17 @@ border-radius: .25rem;
     border: 3px solid #ffffff;
     border-radius: .25rem;}
 
+.linked {font-size: 26px;}
 
 @keyframes appear {from {color: #795D83;} to {color: #f8d86e;}}
 @keyframes appearDescription {from {color: #795D83;} to {color: #f4fad1;}}
-
 @keyframes pastAppear {from {color: #925D83} to {color: #f8d86e;}}
 @keyframes pastAppearDescription {from {color: #9E5D83;} to {color: #f4fad1;}}
 @keyframes presentAppear {from {color: #805D83} to {color: #f8d86e;}}
 @keyframes presentAppearDescription {from {color: #925D83;} to {color: #f4fad1;}}
+@keyframes futureAppear {from {color: #845D83} to {color: #f8d86e;}}
+@keyframes futureAppearDescription {from {color: #825D83;} to {color: #f4fad1;}}
 @keyframes slide { from {margin-top: -40px;} to {margin-top: 50px;}}
 @keyframes leftSlide {from {margin-top: -180px; margin-left: 300px;}to {margin-top: 0px; margin-left: 33px;}}
+@keyframes downSlide { from {margin-top: -180px; margin-right: 50px} to {margin-top: 0px; margin-right: 33px;}}
+@keyframes rightSlide { from {margin-top: -180px; margin-left: -450px} to {margin-top: 0px; margin-left: 33px;}}

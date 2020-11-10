@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,24 +12,64 @@
 </head>
 <body>
     <div class="container">
-        <span class="header"><h3>Daily Tarot </h3></span>
+        <span class="header"><h3>Three Card Tarot </h3></span>
         <br />
-      <div class="instructions"><h5>Reflect what you need to know for the day, then click the deck to pull a single card</h5></div>
+      <div class="instructions"><h5>Click the deck to pull three cards</h5></div>
       <br />
+      <div class="linked"><p><a href="singlecard.html">Single Card Reading</a></p></div>
       <div class="illustrated"><p>All images from the Rider-Waite Tarot <a href="https://github.com/acapasso90/tarot" target="_blank">Open-source code</a> by <a href="https://www.amandacapasso.com" target="_blank">Amanda Capasso</a></p></div>
       <br />
-      <div class="cardTitle"> <h3> </h3> </div> 
+      <div class="card3" id="cardBlank3">   </div>
       <br />
-      <div class="row">
-        <div class="col-sm">
-      <div class="tarotDescription"><h5></h5></div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="pastCard">
+            <div class="pastCardName"> <h3> </h3> </div> 
+            <br />
+            <div class="row">
+                <div class="col-md-6">
+            <div class="pastCardDescription"><h5></h5></div>
+            <br />
+                </div>
+                <div class="col-md-6">
+      <img src="" alt= "" class="pastCardFace" id="pastCardFace" alt="" /> 
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm">
-        <div class="card" id="cardBlank">   </div>
-      <img src="" alt= "" class="cardFace" id="cardFace" alt="" />
+    <div class="col-md-4">
+        <div class="presentCard">
+            <div class="presentCardName"> <h3> </h3> </div> 
+            <br />
+            <div class="row">
+                <div class="col-md-6">
+            <div class="presentCardDescription"><h5></h5></div>
+            <br />
+                </div>
+                <div class="col-md-6">
+            <img src="" alt= "" class="presentCardFace" id="presentCardFace" alt="" /> 
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="col-md-4">
+        <div class="futureCard">
+            <div class="futureCardName"> <h3> </h3> </div> 
+                <br />
+            <div class="row">
+                    <div class="col-md-6">
+                <div class="futureCardDescription"><h5></h5></div>
+                <br /> 
+                    </div>
+                <div class="col-md-6">
+                <img src="" alt= "" class="futureCardFace" id="futureCardFace" alt="" /> 
+                </div>
+           </div>
+           </div>
     </div>
-    </div> 
+</div> 
+</div>
 </body>
-<script src="src/app.js"></script>
+<script src="src/3cardapp.js"></script>
 </html>

@@ -22,7 +22,7 @@ function display3Tarot(response){
     presentCardFace.setAttribute("src", `media/${presentCardName}.jpg`);
     presentCardFace.setAttribute("alt", `${presentCardName}`);
    presentCardFace.classList.add("presentCardFaceActive");
-  // presentCardFace.style.animationPlayState="running";
+    presentCardFace.style.animationPlayState="running";
     presentCardDescription.style.animationPlayState="running";
     presentCardNamed.style.animationPlayState="running";
     let futureReading = response.data.cards[2].meaning_up;
@@ -35,10 +35,11 @@ function display3Tarot(response){
     futureCardFace.setAttribute("src", `media/${futureCardName}.jpg`);
     futureCardFace.setAttribute("alt", `${futureCardName}`);
     futureCardFace.classList.add("futureCardFaceActive");
-   // futureCardFace.style.animationPlayState="running";
-    //futureCardDescription.style.animationPlayState="running";
-    //futureCardNamed.style.animationPlayState="running";
-
+    futureCardFace.style.animationPlayState="running";
+    futureCardDescription.style.animationPlayState="running";
+    futureCardNamed.style.animationPlayState="running";
+    let instructions = document.querySelector(".instructions");
+    instructions.innerHTML = "If no cards are dealt, refresh and try again.";
 }
 
 
