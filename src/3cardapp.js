@@ -39,7 +39,7 @@ function display3Tarot(response){
     futureCardDescription.style.animationPlayState="running";
     futureCardNamed.style.animationPlayState="running";
     let instructions = document.querySelector(".instructions");
-    instructions.innerHTML = "If no cards are dealt, refresh and try again.";
+    instructions.innerHTML = '"And remember that bad times are just times that are bad" - Katrina, Animal Crossing';
 }
 
 
