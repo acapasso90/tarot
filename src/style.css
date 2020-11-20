@@ -118,16 +118,20 @@ border-radius: .25rem;
 }
 
 .cardFace {animation: slide 5s forwards cubic-bezier(0.29, 0.52, 0.56, 0.96);
-    animation-play-state: paused;}
+    animation-play-state: paused;
+    position: absolute;}
 
 .pastCardFace {animation: leftSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
+    position: absolute;
     animation-play-state: paused;}
 
 .presentCardFace {z-index: 0;
+    position: absolute;
     animation: downSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
     animation-play-state: paused;}
 
 .futureCardFace {animation: rightSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
+    position: absolute;
     animation-play-state: paused;}
 
 .cardFaceActive, .pastCardFaceActive, .presentCardFaceActive,
