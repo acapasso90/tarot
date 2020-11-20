@@ -119,7 +119,7 @@ border-radius: .25rem;
 
 .cardFace {animation: slide 5s forwards cubic-bezier(0.29, 0.52, 0.56, 0.96);
     animation-play-state: paused;
-    position: absolute;}
+    }
 
 .pastCardFace {animation: leftSlide 5s cubic-bezier(0.29, 0.52, 0.56, 0.96);
     position: absolute;
